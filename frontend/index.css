@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #050505;
+  color: white;
+}
+
+.app {
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #111;
+  border-bottom: 1px solid #333;
+}
+
+.header h1 {
+  color: #ffd700;
+  font-size: 24px;
+}
+
+
+.content {
+  padding: 20px;
+}
+
+
+.banner {
+  height: 180px;
+  border-radius: 20px;
+  background: linear-gradient(
+    135deg,
+    #1a1a1a,
+    #3b2f00
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffd700;
+  margin-bottom: 25px;
+}
+
+
+h2 {
+  margin: 20px 0 12px;
+  color: #ffd700;
+}
+
+
+.games {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+}
+
+
+.games div {
+  background: #151515;
+  padding: 20px 10px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+
+.card {
+  background: #111;
+  padding: 20px;
+  border-radius: 18px;
+  border: 1px solid #333;
+  line-height: 2;
+}
+
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #111;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 5px;
+  border-top: 1px solid #333;
+}
+
+
+.bottom-nav button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 12px;
+}
+
+
+.bottom-nav button:hover {
+  color: #ffd700;
+}
