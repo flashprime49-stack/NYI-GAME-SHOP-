@@ -105,3 +105,29 @@ h2 {
 .bottom-nav button:hover {
   color: #ffd700;
 }
+.game-card {
+  background:#111;
+  border-radius:18px;
+  padding:15px;
+  text-align:center;
+  border:1px solid #333;
+}
+
+.game-card img {
+  width:100%;
+  border-radius:15px;
+}
+
+.game-card h3 {
+  margin:10px;
+  color:#ffd700;
+}
+
+.game-card button {
+  background:#ffd700;
+  color:#000;
+  border:none;
+  padding:8px 20px;
+  border-radius:20px;
+  font-weight:bold;
+}
