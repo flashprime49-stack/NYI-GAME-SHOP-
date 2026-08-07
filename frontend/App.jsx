@@ -1,15 +1,10 @@
 import { useState } from "react";
 
-function App() {
-  const [page, setPage] = useState("Home");
+import Home from "./pages/Home.jsx";
 
-  const menu = [
-    "🏠 Home",
-    "🛒 Order",
-    "💰 Wallet",
-    "📜 History",
-    "👤 Profile",
-  ];
+function App() {
+
+  const [page, setPage] = useState("Home");
 
   return (
     <div className="app">
@@ -18,66 +13,32 @@ function App() {
         <h1>🎮 NYI GAME SHOP</h1>
       </header>
 
+
       <main className="content">
 
-        {page === "🏠 Home" && (
-          <>
-            <div className="banner">
-              🔥 Welcome To NYI GAME SHOP
-            </div>
+        {page === "Home" && <Home />}
 
-            <h2>🎮 Game List</h2>
-            <div className="games">
-              <div>Mobile Legends</div>
-              <div>PUBG Mobile</div>
-              <div>Free Fire</div>
-            </div>
-
-            <h2>⭐ Featured Top Up</h2>
-            <div className="card">
-              MLBB Diamonds<br />
-              PUBG UC<br />
-              Game Credits
-            </div>
-          </>
-        )}
-
-        {page === "🛒 Order" && (
+        {page === "Order" && (
           <div className="card">
-            <h2>🛒 Order</h2>
-            <p>Current Order</p>
-            <p>Pending</p>
-            <p>Completed</p>
-            <p>Order ID</p>
+            🛒 Order Page
           </div>
         )}
 
-        {page === "💰 Wallet" && (
+        {page === "Wallet" && (
           <div className="card">
-            <h2>💰 Wallet</h2>
-            <h3>Balance: 0 MMK</h3>
-            <p>KBZPay</p>
-            <p>WavePay</p>
-            <p>Deposit History</p>
+            💰 Wallet Page
           </div>
         )}
 
-        {page === "📜 History" && (
+        {page === "History" && (
           <div className="card">
-            <h2>📜 History</h2>
-            <p>Top Up History</p>
-            <p>Deposit History</p>
-            <p>Transaction</p>
+            📜 History Page
           </div>
         )}
 
-        {page === "👤 Profile" && (
+        {page === "Profile" && (
           <div className="card">
-            <h2>👤 Profile</h2>
-            <p>Username</p>
-            <p>Level / VIP</p>
-            <p>Settings</p>
-            <p>Logout</p>
+            👤 Profile Page
           </div>
         )}
 
@@ -85,14 +46,27 @@ function App() {
 
 
       <nav className="bottom-nav">
-        {menu.map((item) => (
-          <button 
-            key={item}
-            onClick={() => setPage(item)}
-          >
-            {item}
-          </button>
-        ))}
+
+        <button onClick={() => setPage("Home")}>
+          🏠 Home
+        </button>
+
+        <button onClick={() => setPage("Order")}>
+          🛒 Order
+        </button>
+
+        <button onClick={() => setPage("Wallet")}>
+          💰 Wallet
+        </button>
+
+        <button onClick={() => setPage("History")}>
+          📜 History
+        </button>
+
+        <button onClick={() => setPage("Profile")}>
+          👤 Profile
+        </button>
+
       </nav>
 
     </div>
