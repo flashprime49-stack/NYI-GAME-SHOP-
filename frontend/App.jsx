@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import Home from "./pages/Home.jsx";
+import Order from "./pages/Order.jsx";
 
 function App() {
 
@@ -18,27 +19,37 @@ function App() {
 
         {page === "Home" && <Home />}
 
-        {page === "Order" && (
-          <div className="card">
-            🛒 Order Page
-          </div>
-        )}
+        {page === "Order" && <Order />}
 
         {page === "Wallet" && (
           <div className="card">
-            💰 Wallet Page
+            <h2>💰 Wallet</h2>
+            <p>Balance: 0 MMK</p>
+            <p>KBZPay</p>
+            <p>WavePay</p>
+            <p>Deposit History</p>
           </div>
         )}
+
 
         {page === "History" && (
           <div className="card">
-            📜 History Page
+            <h2>📜 History</h2>
+            <p>Top Up History</p>
+            <p>Deposit History</p>
+            <p>Transaction</p>
           </div>
         )}
 
+
         {page === "Profile" && (
           <div className="card">
-            👤 Profile Page
+            <h2>👤 Profile</h2>
+            <p>Account Info</p>
+            <p>Username</p>
+            <p>Level / VIP</p>
+            <p>Settings</p>
+            <p>Logout</p>
           </div>
         )}
 
