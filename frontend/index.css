@@ -116,7 +116,7 @@ h2 {
 .game-card img {
   width:100%;
   border-radius:15px;
-}
+}f
 
 .game-card h3 {
   margin:10px;
@@ -130,4 +130,29 @@ h2 {
   padding:8px 20px;
   border-radius:20px;
   font-weight:bold;
+}
+
+
+.wallet-card {
+  background: linear-gradient(
+    135deg,
+    #1a1a1a,
+    #3b2f00
+  );
+  padding:25px;
+  border-radius:20px;
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.pay-btn {
+  width:100%;
+  padding:15px;
+  margin:10px 0;
+  border:none;
+  border-radius:15px;
+  background:#ffd700;
+  color:#000;
+  font-weight:bold;
+  font-size:16px;
 }
